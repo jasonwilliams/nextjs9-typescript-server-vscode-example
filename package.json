@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "author": "Xilel",
-  "dependencies": {    
+  "dependencies": {
     "cross-env": "^6.0.3",
     "express": "^4.17.1",
     "next": "^9.1.6",
