@@ -9,4 +9,4 @@ As off @v1:
 - Firefox debugger does not work due to these 2 issues:
 - - https://github.com/zeit/next.js/issues/9471
 - - https://github.com/firefox-devtools/vscode-firefox-debug/issues/177
-- - Server Side debugging works (Node v13.2.0)
+- Server Side debugging works (Node v13.2.0)
