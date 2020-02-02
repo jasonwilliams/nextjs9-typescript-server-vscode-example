@@ -14,3 +14,7 @@ As off @v1:
 - - https://github.com/zeit/next.js/issues/9471
 - - https://github.com/firefox-devtools/vscode-firefox-debug/issues/177
 - Server Side debugging works (Node v13.2.0)
+
+### Outstanding issues
+
+https://github.com/microsoft/vscode-js-debug/issues/289 - Server Side debugging is still a bit sketchy and not properly working with the new nightly debugger.
