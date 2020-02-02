@@ -2,11 +2,11 @@
 
 This is example of next app using express, typescript and next, that can be debuged in vscode.
 
-## Prerequesites
+### Prerequesites
 
 Due to https://github.com/microsoft/vscode-chrome-debug/issues/978 the [javascript debugger (nightly)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.js-debug-nightly) plugin is needed.
 
-As off @v1:
+### As off @v1:
 
 - Chrome Works (v79.0.3945.130)
 - Edge Works (v79.0.309.71)
