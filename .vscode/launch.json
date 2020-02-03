@@ -6,12 +6,7 @@
       "request": "launch",
       "name": "launch server",
       "runtimeExecutable": "node",
-      "runtimeArgs": [
-        "-r",
-        "ts-node/register",
-        "--inspect=9229",
-        "server/index.ts"
-      ],
+      "runtimeArgs": ["-r", "ts-node/register", "server/index.ts"],
       "env": {
         "TS_NODE_PROJECT": "tsconfig.server.json"
       },
@@ -38,7 +33,8 @@
       "request": "launch",
       "name": "Launch Chrome",
       "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
+      "webRoot": "${workspaceFolder}",
+      "trace": true
     },
     {
       "type": "edge",
