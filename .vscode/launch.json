@@ -17,16 +17,7 @@
       "request": "launch",
       "name": "Launch Firefox",
       "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}",
-      "log": {
-        "fileName": "${workspaceFolder}/vscode-firefox-debug.log",
-        "fileLevel": {
-          "default": "Debug"
-        },
-        "consoleLevel": {
-          "default": "Warn"
-        }
-      }
+      "webRoot": "${workspaceFolder}"
     },
     {
       "type": "pwa-chrome",
