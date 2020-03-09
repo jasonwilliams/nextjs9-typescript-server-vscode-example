@@ -21,6 +21,7 @@
   },
   "scripts": {
     "dev": "cross-env TS_NODE_PROJECT=tsconfig.server.json node -r ts-node/register server/index.ts",
+    "debug": "cross-env TS_NODE_PROJECT=tsconfig.server.json node --inspect=0.0.0.0:9229 -r ts-node/register server/index.ts",
     "build": "next build && tsc --project tsconfig.server.json",
     "start": "cross-env NODE_ENV=production node dist/index.js"
   }
