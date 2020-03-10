@@ -13,6 +13,14 @@
       "port": 9229
     },
     {
+      "type": "pwa-node",
+      "request": "attach",
+      "name": "launch server (Docker)",
+      "remoteRoot": "/app",
+      "localRoot": "${workspaceFolder}",
+      "trace": true
+    },
+    {
       "type": "firefox",
       "request": "launch",
       "name": "Launch Firefox",

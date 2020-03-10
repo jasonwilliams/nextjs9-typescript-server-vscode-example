@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  node:
+    build: "."
+    tty: true
+    cap_add:
+      - SYS_ADMIN
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+    expose:
+      - "3000" # Node server
+      - "9229" # Node Debugger
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
