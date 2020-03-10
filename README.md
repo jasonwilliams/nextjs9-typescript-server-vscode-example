@@ -16,3 +16,4 @@ Due to [#978](https://github.com/microsoft/vscode-chrome-debug/issues/978) and [
 - - [now works](https://github.com/firefox-devtools/vscode-firefox-debug/issues/177#issuecomment-591005586) as of 2.7.0
 - - Restart not working properly https://github.com/firefox-devtools/vscode-firefox-debug/issues/188
 - Server Side debugging works (Node v13.2.0)
+- Node debugging (`pwa-node`) fails when using via Docker - https://github.com/microsoft/vscode-js-debug/issues/383
