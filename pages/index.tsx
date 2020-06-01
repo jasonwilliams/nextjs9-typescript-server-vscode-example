@@ -5,15 +5,10 @@ function testFunction(): string {
   return c.toFixed(2);
 }
 
-function alfa(): string {
+export function alfa(): string {
   const alfa = "a";
   const beta = "bcc";
   return alfa + beta;
 }
 
-export default () => (
-  <div>
-    Welcome to next.js! {testFunction()}
-    {alfa()}
-  </div>
-);
+export default () => <div>Welcome to next.js! {testFunction()}</div>;

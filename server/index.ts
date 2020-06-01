@@ -1,27 +1,29 @@
 import next from "next";
 import express from "express";
+import { alfa } from "pages";
 
 const port = process.env.port || 3000;
-const dev = process.env.NODE_ENV !== 'production'
+const dev = process.env.NODE_ENV !== "production";
 
-const app = next({ dev })
-const handle = app.getRequestHandler()
+const app = next({ dev });
+const handle = app.getRequestHandler();
+alfa();
 
 app.prepare().then(() => {
-    // express setup
-    const expressApp = express();
+  // express setup
+  const expressApp = express();
 
-    // declaring routes for our pages
-    expressApp.get('/', (req:any, res:any) => {
-        return app.render(req, res, '/', req.query)
-    })
+  // declaring routes for our pages
+  expressApp.get("/", (req: any, res: any) => {
+    return app.render(req, res, "/", req.query);
+  });
 
-    // fallback all request to next request handler
-    expressApp.all('*', (req:any, res:any) => {
-        return handle(req, res)
-    })
+  // fallback all request to next request handler
+  expressApp.all("*", (req: any, res: any) => {
+    return handle(req, res);
+  });
 
-    expressApp.listen(port, ()=>{
-        console.log(`>  Ready on http://localhost:${port}`);
-    })
+  expressApp.listen(port, () => {
+    console.log(`>  Ready on http://localhost:${port}`);
+  });
 });
