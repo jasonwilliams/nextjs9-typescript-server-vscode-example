@@ -6,11 +6,12 @@
       "request": "launch",
       "name": "launch server",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["-r", "ts-node/register", "server/index.ts"],
+      "runtimeArgs": ["-r", "ts-node/register", "${workspaceFolder}/server/index.ts"],
       "env": {
-        "TS_NODE_PROJECT": "tsconfig.server.json"
+        "TS_NODE_PROJECT": "${workspaceFolder}/tsconfig.server.json"
       },
-      "port": 9229
+      "port": 9229,
+      "trace": true
     },
     {
       "type": "pwa-node",
@@ -18,7 +19,9 @@
       "name": "launch server (Docker)",
       "remoteRoot": "/app",
       "localRoot": "${workspaceFolder}",
-      "trace": true
+      "sourceMapPathOverrides": {
+        "webpack-internal:///./": "${workspaceFolder}/"
+      }
     },
     {
       "type": "firefox",
