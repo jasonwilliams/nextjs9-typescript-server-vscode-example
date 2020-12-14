@@ -17,7 +17,7 @@
       "request": "attach",
       "name": "launch server (Docker)",
       "remoteRoot": "/app",
-      "localRoot": "${workspaceFolder}",
+      "localRoot": "${workspaceFolder}/webapp",
       "trace": true
     },
     {
