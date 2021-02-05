@@ -19,9 +19,7 @@
       "name": "launch server (Docker)",
       "remoteRoot": "/app",
       "localRoot": "${workspaceFolder}",
-      "sourceMapPathOverrides": {
-        "webpack-internal:///./": "${workspaceFolder}/"
-      }
+      "resolveSourceMapLocations": null
     },
     {
       "type": "firefox",

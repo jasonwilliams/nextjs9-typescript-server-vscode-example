@@ -1,3 +1,5 @@
+import React from "react";
+
 function testFunction(): string {
   const a = 1;
   const b: number = 4;

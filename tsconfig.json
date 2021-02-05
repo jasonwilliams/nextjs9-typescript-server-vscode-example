@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
     "lib": [
       "dom",
-      "es2017"
+      "es2020"
     ],
     "baseUrl": ".",
-    "jsx": "preserve",
+    "jsx": "react",
     "allowJs": true,
     "noEmit": true,
     "allowSyntheticDefaultImports": true,
