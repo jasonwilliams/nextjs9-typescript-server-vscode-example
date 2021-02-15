@@ -1,6 +1,7 @@
 import React from "react";
 
 function testFunction(): string {
+  throw new Error("test");
   const a = 1;
   const b: number = 4;
   const c = a + b;
