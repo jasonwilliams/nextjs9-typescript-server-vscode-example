@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 function testFunction(): string {
   const a = 1;
@@ -13,9 +13,11 @@ function alfa(): string {
   return alfa + beta;
 }
 
-export default () => (
+const page = () => (
   <div>
     Welcome to next.js! {testFunction()}
     {alfa()}
   </div>
 );
+
+export default page;
